@@ -1,0 +1,453 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    height: fit-content;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+
+
+h3{
+    font-size: 2rem;
+}
+
+li{
+    list-style: none;
+}
+p{
+    font-weight: 700;
+}
+
+img:hover{
+    filter: drop-shadow(1px 1px 50px rgb(255, 255, 255));
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    /* background-color: black; */  
+    position: relative;
+    /* z-index: 0;  */
+    overflow:hidden ;  
+    height: 100vh
+}
+
+/* my-nav-bar */
+
+nav{
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.125); */
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+}
+
+.menu{
+    /* background-color: rgba(255, 255, 255, 0.125); */
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+}
+
+nav a{
+    text-decoration: none;
+   
+}
+
+/* my-logo */
+.logo{
+    color: white;
+    opacity: 0.5;
+    font-size: 3.8rem;
+    padding: 40px;
+    text-shadow: 2px 2px 10px black;
+    animation: moveLtoR 4s ease-in-out forwards;
+    transition: all .5s;
+}
+nav .logo:hover{
+    opacity: 1;
+    text-shadow: 2px 10px 10px black;
+}
+/* home-button */
+nav .homeBtn{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    opacity: 0.5;
+    padding: 12px;
+    margin:25px 0px 10px 0px;
+    background-color:white;
+    transition: all .5s;
+    animation: moveRtoL 3s ease-in-out forwards;
+}
+
+nav .homeBtn:hover{
+    opacity: 1;
+    box-shadow: 2px 10px 10px black;
+}
+
+/* my-home-page */
+#my-home-page{
+    width: 100vw;
+    height: 100vh;
+    position: absolute; 
+    /* background-image: url(./GROUP_PROJECT01/Background01.jpg); */
+    background-image:url(./GROUP_PROJECT01/colorful-paint-black-background.jpg);
+    background-size:cover ;
+     z-index: 10;
+    top:0;
+    animation: imageMoves 40s ease-in-out backwards infinite ;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+     /* display: none; */
+    
+ }
+ /* THIS SHOW ALL SECTIONS */
+ section{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-shadow: 0px 10px 10px black;
+    top:0;
+    z-index:2;
+ }
+
+/*  THE PROFILES */
+ #charlie{   
+/* background-image: url(./GROUP_PROJECT01/Background01.jpg); */
+    background-image:url(./GROUP_PROJECT01/Background01.jpg);
+    background-size:cover ;
+    animation: imageMoves 40s ease-in-out backwards infinite ;
+    animation: none;
+      
+ }
+
+ #van{   
+    /* background-image: url(./GROUP_PROJECT01/Background01.jpg); */
+        background-image:url(./GROUP_PROJECT01/colorful-paint-black-background.jpg);
+        background-size:cover ;
+        animation: imageMoves 40s ease-in-out backwards infinite ;
+        animation: none;
+ }    
+
+ #curtis{   
+    /* background-image: url(./GROUP_PROJECT01/Background01.jpg); */
+        background-image:url(./GROUP_PROJECT01/Background01.jpg);
+        background-size:cover ;
+        animation: imageMoves 40s ease-in-out backwards infinite ;
+        animation: none;
+        display: flex;
+        flex-direction: row-reverse;
+ } 
+
+
+ .profileContainer{
+    width: 90vw;
+    height: 80%;
+    /* border: 5px solid rgb(255, 9, 9); */
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: absolute;
+    bottom:0px ;
+    
+ }
+
+ .profileContainer p{
+    padding-left: 40px;
+ }
+
+
+.full{
+    font-size: 1.5rem;
+}
+ .infoProfile{
+    /* border:2px solid black; */
+    color: white;
+    font-family: monospace;
+    width: 80%;
+    padding-left: 50px;
+    background-color: rgba(240, 248, 255, 0.296);
+    border-radius: 20px;
+ }
+
+ .infoProfile h2{
+    font-size: 4rem
+ }
+/* the image in may profile */
+ .imgProfile img{
+    filter: drop-shadow(1px 2px 50px rgb(0, 0, 0));
+    
+    
+    
+    
+ }
+
+
+ .imgProfile{
+    /* background-image: url('./GROUP_PROJECT01/charlie_01-removebg-preview.png'); */
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+   width:;
+   filter: drop-shadow(1px 1px 50px rgb(17, 17, 17));
+   position: relative;
+   
+ }
+
+/* competence */
+ .competence{
+
+ }
+ .competence h3{
+    font-size: 2rem;
+    margin: 10px 0px;
+ }
+
+ .competence ul{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 10px;
+    width: 60%;
+   
+ }
+.competence ul li{
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.23);
+    padding: 10px;
+    list-style: none;
+    text-shadow: 0px 2px 10px black;
+    box-shadow:0px 2px 10px black;
+    font-weight: 700;
+
+}
+ /* ul li div { */
+    /* width: 200px; */
+    /* height: 10px; */
+    /* background-color:white ; */
+    /* border: 1px solid red; */
+    /* border-radius: 20px; */
+ /* } */
+/*  */
+ 
+ /* .competence ul span .line01{ */
+
+ /* } */
+ /* .competence img{ */
+    /* width: 40px; */
+ /* } */
+ /* .competence .jsLogo{ */
+    /* width: 26px; */
+ /* } */
+
+ /* LES ATOUTS ET EXP */
+.objectif-atouts{
+    display: flex;
+    
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.experience{
+    width:50%;
+    font-weight: 700;
+}
+
+.atouts{
+    width: 50%; 
+    font-weight: 700;
+}
+
+ .experience h3{
+    margin: 10px 0px 10px 0px;
+ }
+
+ .atouts h3{
+    margin: 10px 0px 10px 0px;
+ }
+
+ .atouts ul{
+    padding: 0px;
+ }
+/* THE FADE CONTAINER  */
+ section .fadecontainer{
+    background-color: black;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+    z-index: 1000;
+ }
+ body .fadecontainer{
+    background-color: black;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+    z-index: 1000;
+ }
+
+@keyframes backImage {
+    
+}
+ /* ---------------------- */
+.trino_container{
+    box-shadow: 2px 2px 20px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    width: 70%;
+    height: fit-content;
+    bottom: 10px;    
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 150px auto;
+    
+    /* animation: imageMoves 60s ease-in-out infinite forwards; */
+}
+
+.image-container{
+    /* background-image: url("./GROUP_PROJECT01/colorful-paint-black-background.jpg" ) ; */
+    /* object-fit: cover; */
+    /* background-size: cover; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-rows: 1fr; */
+    width:100vw ;
+    max-height: ;
+    box-sizing: border-box;
+    
+    /* margin-top: 50px; */
+    
+
+    /* I try flex */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.image-container div{
+    /* background-color: aqua; */
+    /* border: 2px solid black; */
+    width:33.3%;
+    /* width:; */
+    height:500px;
+    /* z-index: ; */
+   position: relative;
+   filter: drop-shadow(1px 1px 50px rgb(17, 17, 17));
+    
+}
+
+/* .image-container div a img{ */
+  /*  */
+    /* transition: all 1s ease-in-out; */
+    /* position: absolute; */
+    /*  */
+   /*  */
+    /* width: 400px; */
+    /* height: 600px; */
+    /* max-width: 100%; */
+/* } */
+
+.image-container div:hover{
+    filter: drop-shadow(1px 20px 50px rgb(253, 252, 252));
+    /* animation: none; */
+    cursor: pointer;
+      
+  
+}
+
+#charlie_pic {
+   animation: moveLtoR 1s ease-in-out forwards; 
+   /* animation: imageMoves 7s 5s ease-in-out infinite forwards; */
+   background-image: url("./GROUP_PROJECT01/charlie_01-removebg-preview.png" );
+   background-size: cover;
+ 
+     
+}
+
+#curtis_pic{
+    animation: moveRtoL 1s ease-in-out forwards; 
+    background-image: url("./GROUP_PROJECT01/P1001359-removebg-preview.png");
+    background-size: cover;
+   
+    /* animation: imageMoves 7s 5s ease-in-out infinite forwards; */
+}
+
+#Van_pic{
+    animation:  appear 0.5s ease-in-out forwards; 
+    background-image: url("./GROUP_PROJECT01/van01-removebg-preview.png");
+    background-size: cover;
+    
+    /* animation: imageMoves 7s 5s ease-in-out infinite forwards; */
+}
+
+@keyframes moveLtoR{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveRtoL{
+    from{
+        transform: translateX(1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes appear{
+    from{
+        transform: translateY(1000px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes imageMoves {
+    0%{
+        transform: scale(1.1);
+    }
+
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+
+    75%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.1);
+    }
+}   
+
+
+
