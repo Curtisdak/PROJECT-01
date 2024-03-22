@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    grid-template-areas: none;
+    background-image: url('./GROUP_PROJECT01/colorful-paint-black-background.jpg');
+    background-size: cover;
+    position: relative;
+    height: 100vh
+}
+
+.menu{
+    /* background-color: rgba(255, 255, 255, 0.125); */
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+}
+
+nav a{
+    text-decoration: none;
+   
+}
+
+/* my-logo */
+.logo{
+    color: white;
+    opacity: 0.5;
+    font-size: 3.8rem;
+    padding: 40px;
+    text-shadow: 2px 2px 10px black;
+    transition: 0.5s;
+    animation: moveRtoL 1.5s ease-in-out forwards;
+}
+nav .logo:hover{
+    opacity: 1;
+    text-shadow: 2px 10px 10px black;
+}
+/* MENU LOGOS  that menu is the div that contains my two logo */
+.menu-logos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+/* home-button */
+nav .homeBtn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0.5;
+    padding: 12px;
+    margin:25px 0px 10px 0px;
+    background-color:white;
+    transition: all .5s;
+    animation: moveRtoL 1s ease-in-out forwards;
+}
+
+nav .contact-logo{
+   
+    background-color: rgb(240, 248, 255);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    margin:25px 0px 10px 0px;
+    opacity: 0.5;
+    transition: all .5s;
+    animation: moveRtoL 1.5s ease-in-out forwards;
+    
+}
+nav .contact-logo:hover{
+    opacity: 1;
+    box-shadow: 2px 10px 10px black;
+}
+nav .homeBtn:hover{
+    opacity: 1;
+    box-shadow: 2px 10px 10px black;
+}
+
+
+.container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+    background-color: brown;
+    
+    
+}
+
+.contact-container {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    padding: 100px;
+    background-color: rgba(147, 146, 146, 0.377);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 12px black;
+    transition: all 0.5s ease-in-out;
+    
+}
+.contact-container:hover{
+   background-color: rgba(0, 0, 0, 0.663);
+   
+}
+.contact-infos {
+    width: 70%;
+}
+li{
+    font-size: 35px;
+}
+ li a{
+  text-decoration: none;
+  font-size:45px;
+  color:aliceblue
+}
+.contact-Photo{
+    width: 30%;
+    cursor: pointer;
+}
+.contact-Photo img {
+      border-radius: 20px;
+      transition: all 0.5s ease-in-out;
+}
+.contact-Photo img:hover{
+   transform:scale(1.15);
+   box-shadow: 0px 0px 100px white ;
+}
+
+h4 {
+    font-size: 80px;
+    color: white;
+}
+
+.devfull {
+    font-size:40px;
+}
+.contact-infos ul {
+    font-size: 30px;
+}
+.contact-infos ul li {
+    color: white;
+}
+
+.social-logos {
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    
+}
+
+.social-logos img {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+   box-shadow: 0px 0px 50px rgb(255, 255, 255);
+   background-color: aliceblue;
+   transition: all 0.5s ease-in-out;
+
+}
+.social-logos img:hover{
+    width: 140px;
+    height: 140px;
+}
+p {
+    font-size: 25px;
+    color: white;
+}
+
+
+@media (max-width:800px){
+    .contact-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .contact-infos{
+        width: 100%;
+    }
+
+    .contact-Photo{
+        width: 100%;
+    }
+}
