@@ -1,0 +1,94 @@
+  @media only screen and (min-width: 300px) { 
+  body {
+     padding:0;
+     margin:0;
+     min-height: 568px;
+     background-color: light white;
+     position: active;
+    }
+     
+   Avatar {
+     position: absolute;
+     width: 142px;
+     height: 209px;
+     top: 72px;
+     left: 172px;
+     background-blend-mode: darken;
+     object-fit: fill;
+   }
+   
+   logo {
+     position: absolute;
+     width: 75px;
+     height: 26px;
+     top: -1px;
+     left: 116px;
+     font-family: "Cinzel-Regular", Helvetica;
+     font-weight: 400;
+     color: #000000;
+     font-size: 25px;
+     text-align: center;
+     letter-spacing: 0;
+     line-height: normal;
+     text-decoration: underline;
+     white-space: nowrap;
+   }
+   
+   contact {
+     position: absolute;
+     width: 28px;
+     height: 23px;
+     top: 26px;
+     left: 55px;
+   }
+   
+   home {
+     position: absolute;
+     width: 25px;
+     height: 23px;
+     top: 25px;
+     left: 237px;
+   }
+   
+   frame {
+     position: absolute;
+     width: 157px;
+     height: 132px;
+     top: 149px;
+     left: 5px;
+   }
+   
+   frame1 {
+     width: 309px;
+     height: 68px;
+     top: 290px;
+     position: absolute;
+     left: 5px;
+   }
+   
+   frame2 {
+     width: 306px;
+     height: 116px;
+     top: 371px;
+     position: absolute;
+     left: 5px;
+   }
+   
+   frame3 {
+     width: 311px;
+     height: 46px;
+     top: 496px;
+     position: absolute;
+     left: 5px;
+   }
+   
+   footer {
+     margin: 0;
+     padding: 0;
+     position: absolute;
+     width: 240px;
+     height: 24px;
+     top: 542px;
+     left: 45px;
+   }
+}
